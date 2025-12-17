@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F6103A592EF1DD660073C1A5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F6103A582EF1DD660073C1A5 /* FirebaseAuth */; };
+		F6103A5B2EF1DD660073C1A5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F6103A5A2EF1DD660073C1A5 /* FirebaseFirestore */; };
+		F6103A5D2EF1DD660073C1A5 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = F6103A5C2EF1DD660073C1A5 /* FirebaseFunctions */; };
+		F6103A5F2EF1DD660073C1A5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F6103A5E2EF1DD660073C1A5 /* FirebaseStorage */; };
+		F6103A662EF1E57B0073C1A5 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = F6103A652EF1E57B0073C1A5 /* GoogleGenerativeAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F6103A222EEAB4560073C1A5 /* AdventCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6103A662EF1E57B0073C1A5 /* GoogleGenerativeAI in Frameworks */,
+				F6103A5D2EF1DD660073C1A5 /* FirebaseFunctions in Frameworks */,
+				F6103A5F2EF1DD660073C1A5 /* FirebaseStorage in Frameworks */,
+				F6103A592EF1DD660073C1A5 /* FirebaseAuth in Frameworks */,
+				F6103A5B2EF1DD660073C1A5 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,11 @@
 			);
 			name = AdventCalendar;
 			packageProductDependencies = (
+				F6103A582EF1DD660073C1A5 /* FirebaseAuth */,
+				F6103A5A2EF1DD660073C1A5 /* FirebaseFirestore */,
+				F6103A5C2EF1DD660073C1A5 /* FirebaseFunctions */,
+				F6103A5E2EF1DD660073C1A5 /* FirebaseStorage */,
+				F6103A652EF1E57B0073C1A5 /* GoogleGenerativeAI */,
 			);
 			productName = AdventCalendar;
 			productReference = F6103A222EEAB4560073C1A5 /* AdventCalendar.app */;
@@ -107,6 +125,10 @@
 			);
 			mainGroup = F6103A192EEAB4560073C1A5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F6103A572EF1DD660073C1A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F6103A642EF1E57B0073C1A5 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F6103A232EEAB4560073C1A5 /* Products */;
 			projectDirPath = "";
@@ -337,6 +359,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6103A572EF1DD660073C1A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+		F6103A642EF1E57B0073C1A5 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6103A582EF1DD660073C1A5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6103A572EF1DD660073C1A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F6103A5A2EF1DD660073C1A5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6103A572EF1DD660073C1A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F6103A5C2EF1DD660073C1A5 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6103A572EF1DD660073C1A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		F6103A5E2EF1DD660073C1A5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6103A572EF1DD660073C1A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		F6103A652EF1E57B0073C1A5 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6103A642EF1E57B0073C1A5 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6103A1A2EEAB4560073C1A5 /* Project object */;
 }

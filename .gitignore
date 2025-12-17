@@ -1,0 +1,12 @@
+
+AdventCalendar/Info.plist
+AdventCalendar/GoogleService-Info.plist
+AdventCalendar/Pods
+AdventCalendar/Pods.xcodeproj
+AdventCalendar/Pods.xcworkspace
+AdventCalendar/Pods/
+AdventCalendar/Pods/Target Support Files/
+AdventCalendar/Pods/Target Support Files/Pods-AdventCalendar/
+AdventCalendar/Pods/Target Support Files/Pods-AdventCalendar/Pods-AdventCalendar.debug.xcconfig
+AdventCalendar/Pods/Target Support Files/Pods-AdventCalendar/Pods-AdventCalendar.release.xcconfig
+AdventCalendar/Pods/Target Support Files/Pods-AdventCalendar/Pods-AdventCalendar.debug.xcconfig
